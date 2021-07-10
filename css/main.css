@@ -102,6 +102,11 @@ body {
   padding: 1px 0;
 }
 
+.heading a {
+  text-decoration: none;
+  color: #DFDFDF;
+}
+
 .question {
   font-family: 'helvetica', sans-serif;
   text-align: center;
@@ -129,6 +134,24 @@ body {
   font-family: sans-serif;
   font-weight: bold;
   justify-content: center;
+  border: solid 2px #a3a3a3;
+  box-shadow: 3px 3px 5px #555;
+  transition:.2s;
+}
+
+#button1:hover,
+#button2:hover,
+#button3:hover {
+  background-color: #e6d887;
+  transition:.2s;
+}
+
+#button1:active,
+#button2:active,
+#button3:active {
+  background-color: #c9ba65;
+  box-shadow: 2px 2px 5px #555;
+  transform: scale(.98);
 }
 
 .hide {

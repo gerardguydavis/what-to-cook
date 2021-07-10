@@ -133,7 +133,7 @@ const breakfastTime = function () {
     question.append(updateQuestion);
     button1.innerText = "Uh, like now please.";
     button2.innerTet = "I can wait for a bit.";
-    button3.innerText = "I can barely remember what happened last night and now you want me to cook? Nuh uh, no ma'am. I need hangover breakfast right. now.";
+    button3.innerText = "I have no idea what happened last night. I need hangover breakfast NOW.";
     /*button1.addEventListener("click", function() {
 
     })*/
