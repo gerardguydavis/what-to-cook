@@ -95,6 +95,18 @@ body {
   font-family: 'helvetica', sans-serif;
   text-align: center;
   color: #DFDFDF;
+  width: 100%;
+  border-bottom: solid 1px #DFDFDF;
+  background-color: #7d0505;
+  margin: 0;
+  padding: 1px 0;
+}
+
+.question {
+  font-family: 'helvetica', sans-serif;
+  text-align: center;
+  color: #DFDFDF;
+  font-size: 1.25em;
 }
 
 .buttons {
@@ -114,6 +126,31 @@ body {
   padding: 50px 0;
   margin: 15px 0;
   border-radius: 8px;
+  font-family: sans-serif;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.hangover-breakfast {
+  color: #DFDFDF;
+  font-family: 'helvetica', sans-serif;
+  margin: 10px 20px;
+}
+
+.hangover-breakfast h2 {
+  padding: 5px;
+  margin: 0;
+  border: dotted yellow 3px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.hangover-breakfast p {
+  font-weight: bold;
 }
 
 /* ==========================================================================
@@ -204,16 +241,7 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
