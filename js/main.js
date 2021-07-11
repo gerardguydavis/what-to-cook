@@ -9,23 +9,10 @@ let notes = document.querySelector(".notes");
 let updateNotes = document.createElement("div");
 
 //Meal Scores
-let breakfast = 0;
-let dinner = 0;
-let vegetarian = 0;
-let vegan = 0;
-let chicken = 0;
-let beef = 0;
-let pork = 0;
-let seafood = 0;
-let marinate = 0;
-let spice = 0;
-let cookTime = 0;
-let sweet = 0;
-let savory = 0;
-let bake = 0;
-let breakFast = 0;
 
 const whatMeal = function () {
+    let breakfast = 0;
+    let dinner = 0;
     updateQuestion.innerText = "What are you trying to make?";
     question.append(updateQuestion);
     button1.innerText = "Breakfast";
@@ -46,6 +33,7 @@ const whatMeal = function () {
 }
 
 const isVegetarian = function () {
+    let vegetarian = 0;
     updateQuestion.innerText = "Are you a vegetarian?";
     question.append(updateQuestion);
     button1.innerText = "Yes";
@@ -56,9 +44,9 @@ const isVegetarian = function () {
         isVegan();
     });
     button2.addEventListener("click", function () {
-        if (breakfast > 0) {
+        /*if (breakfast > 0) {
             sweetSavory()
-        } else whatMeat();
+        } else*/ whatMeat();
     });
     button3.addEventListener("click", function () {
         vegetarian += 1;
@@ -67,6 +55,7 @@ const isVegetarian = function () {
 }
 
 const isVegan = function () {
+    let vegan = 0;
     updateQuestion.innerText = "Are you vegan?";
     question.append(updateQuestion);
     button1.innerText = "Yes";
@@ -74,22 +63,24 @@ const isVegan = function () {
     button3.innerText = "No, but I like vegan foods";
     button1.addEventListener("click", function () {
         vegan += 2;
-        if (breakfast > 0) {
+        /*if (breakfast > 0) {
             sweetSavory();
-        } else marinateTime();
+        } else*/ marinateTime();
     });
     button2.addEventListener("click", function () {
         marinateTime();
     });
     button3.addEventListener("click", function () {
         vegan += 1;
-        if (breakfast > 0) {
+        /*if (breakfast > 0) {
             sweetSavory();
-        } else marinateTime();
+        } else*/ marinateTime();
     });
 }
 
 const sweetSavory = function () {
+    let sweet = 0;
+    let savory = 0;
     updateQuestion.innerText = "Do you want something sweet or savory?";
     question.append(updateQuestion);
     button1.innerText = "Sweet!";
@@ -111,6 +102,7 @@ const sweetSavory = function () {
 }
 
 const wannaBake = function() {
+    let bake = 0;
     updateQuestion.innerText = "Do you feel like baking something?";
     question.append(updateQuestion);
     button1.innerText = "Sure!";
@@ -129,10 +121,11 @@ const wannaBake = function() {
 }
 
 const breakfastTime = function () {
-    updateQuestion.innerText = "How soon doo you need breakfast?";
+    let breakFast = 0;
+    updateQuestion.innerText = "How soon do you need breakfast?";
     question.append(updateQuestion);
     button1.innerText = "Uh, like now please.";
-    button2.innerTet = "I can wait for a bit.";
+    button2.innerText = "I can wait for a bit.";
     button3.innerText = "I have no idea what happened last night. I need hangover breakfast NOW.";
     /*button1.addEventListener("click", function() {
 
@@ -173,6 +166,8 @@ const hangoverBreakfast = function () {
     }
 
 const whatMeat = function () {
+    let chicken = 0;
+    let beef = 0;
     updateQuestion.innerText = "Chicken or beef?";
     question.append(updateQuestion);
     button1.innerText = "Chicken";
@@ -192,6 +187,8 @@ const whatMeat = function () {
 }
 
 const otherMeat = function () {
+    let pork = 0;
+    let seafood = 0;
     updateQuestion.innerText = "How about pork or seafood?";
     question.append(updateQuestion);
     button1.innerText = "Pork";
@@ -206,12 +203,13 @@ const otherMeat = function () {
         marinateTime();
     });
     button3.addEventListener("click", function() {
-        vegetarian += 2;
+        //vegetarian += 2;
         marinateTime();
     });
 }
 
 const marinateTime = function () {
+    let marinate = 0;
     updateQuestion.innerText = "Do you have time to marinate something?";
     question.append(updateQuestion);
     button1.innerText = "No, I'm hungry now!";
@@ -231,6 +229,7 @@ const marinateTime = function () {
 }
 
 const whatSpices = function () {
+    let spice = 0;
     updateQuestion.innerText = "How stocked is your spice rack?";
     question.append(updateQuestion);
     button1.innerText = "Ummm... Is salt a spice? (No, it is not.)"
@@ -250,6 +249,7 @@ const whatSpices = function () {
 }
 
 const whatCookTime = function () {
+    let cookTime = 0;
     updateQuestion.innerText = "Do you feel like cooking?";
     question.append(updateQuestion);
     button1.innerText = "No, I want something quick and easy";
